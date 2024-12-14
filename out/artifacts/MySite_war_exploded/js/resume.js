@@ -9,11 +9,11 @@
  * drawBoard ==画板，用于盛放简历内容
  * resume == 简历内容
  * str == 总的拼接字符串
- * 
+ *
  */
 
 /*字符拼接区*/
-	var introduce='\/**\n * 嗨，我叫倪畅，来自山东滕州\n * 我今年20岁，YTU CS大三在读\n * 首先必须说明，本页面参考自http://strml.net/ \n * 我只是个小菜鸡~~\n **\/\n';
+	var introduce='\/**\n * 嗨，我叫李泉德，来自广州理工\n * 我今年19岁，大二在读\n * 首先必须说明，本页面参考自http://strml.net/ \n * 我只是个小菜鸡~~\n **\/\n';
 	var trs1 = '\n\/* 首先,给所有元素加上过渡效果 *\/';
 	var sty1 = '\n * {\n  transition: all .3s;\n }\n';
 	var trs2 = '\n\/* 然后换个背景 *\/';
@@ -21,7 +21,7 @@
 	var trs3 = '\n\/* 让我们加个边框 *\/';
 	var sty3 = '\n #sourceBoard {\n  background: rgb(48, 48, 48);\n  color:#fff;\n  font-family: monospace;\n  border:1px solid black;\n  width:49%;\n  max-height: 90%;\n  font-size:14px;\n }\n';
 	var trs4 = '\n\/* 似乎有点单调，那么就让语法高亮吧 *\/';
-    var lightheight = '\n .token.comment {\n  color:#857F6B;\n }\n .token.property {\n  color:#64D5EA;\n }\n .token.selector{\n  color:#690;\n }\n '; 
+    var lightheight = '\n .token.comment {\n  color:#857F6B;\n }\n .token.property {\n  color:#64D5EA;\n }\n .token.selector{\n  color:#690;\n }\n ';
     var trs5 = '\/*接下来，我需要准备一下简历，先将刚才写的样式踢到一边儿去*\/'
     var scrollRight = '\n #sourceBoard{\n  -webkit-transform: translateX(95%); \n  } \n '
  //    var drawBoard = '#drawBoard{\n  color:#fff;\n  float:left;\n  position:relative;\n  top:-440px;\n  width:860px;\n  height:600px;\n  border:5px solid black;\n   border-radius:5px;\n  overflow:auto;\n  }'
@@ -34,22 +34,22 @@
 	var sourceBoard = document.getElementById('sourceBoard');
 	var n = 0;
 
-	 
-/*源码版控制区*/	 
+
+/*源码版控制区*/
 var controller= setInterval(put,10);
 	 function put(){
 
 			/*吐代码区域*/
 			n++;
-		
+
 			if(n>0&&n<=929){
 					sourceBoard.innerHTML =str.substring(0,n)
-		
-		
+
+
 			    styleTag.innerHTML =str.substring(0,n);
-	
+
 			}
-			
+
 			/*溢出下拉*/
 			if(n>=380){
 					$('#sourceBoard').animate({
@@ -59,57 +59,60 @@ var controller= setInterval(put,10);
 			/*代码高亮*/
 			if(n>=465&&n<=929){
 				sourceBoard.innerHTML =  Prism.highlight(str.substring(0,n), Prism.languages.css);
-			
+
 			}
-		
+
 		/*创建pre简历板*/
 			if(n>=672&&n<=929){
-				
+
 				if(document.getElementById('drawBoard')){
 					console.log('drawBoard元素已经存在');
-				
+
 				}
 				else{
 					var drawBoard = document.createElement('pre');
 				    drawBoard.id = 'drawBoard';
 				    document.body.appendChild(drawBoard);
-				  
-				} 
+
+				}
 
 			}
-			
+
 			/*简历板溢出下拉*/
 			if(n>929&&n<1885){
 			var drawBoard = document.getElementById('drawBoard');
 				drawBoard.innerHTML =str.substring(929,n);
-				
+
 					$('#drawBoard').animate({
 						scrollTop: 1000
 						}, 50);
 			}
 
-		/*简历板写完之后，需要在sourceBoard中写入魔术代码*/	
+		/*简历板写完之后，需要在sourceBoard中写入魔术代码*/
 	     if(n>=1885){
-	     
+
 	     	  sourceBoard.innerHTML =  Prism.highlight(str.substring(0,929), Prism.languages.css)+Prism.highlight(str.substring(1883,n), Prism.languages.css);
-	     	  
-	     	  
+
+
 	     }
-	     
+
 	     /*魔术代码*/
 	     if(n>=1977){
 	     	var drawBoard = 	document.getElementById('drawBoard');
 	     	drawBoard.innerHTML =marked(str.substring(929,1885));
-	     	
+
 	     		if(n>str.length){window.clearInterval(controller)}
 	     }
-				
-		
-				
-		
+
+
+
+
 			console.log(n)
-			
-			
-		
-	
+
+
+
+
 };
+
+
+

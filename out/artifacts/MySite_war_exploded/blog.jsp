@@ -12,8 +12,8 @@
     %>
     <meta content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"
           name="viewport">
-    <meta name="keywords" content="倪畅,烟台大学,计算机,学生,个人主页,HTML,CSS,PHP,JavaScript,jQuery,XML,AJAX,,SQL,bootstrap,Python" />
-    <meta name="description" content="倪畅的个人主页" />
+    <meta name="keywords" content="Quande Li，广州理工学院，计算机，学生，个人主页" />
+    <meta name="description" content="Quande Li的个人主页" />
     <link rel="shortcut icon" href="<%=context %>/img/favicon.ico"/>
     <link rel="stylesheet" href="<%=context %>/css/blog.css"/>
     <link rel="stylesheet" href="<%=context %>/css/bootstrap.min.css">
@@ -117,7 +117,7 @@
     <div id="top">
         <div class="info">
             <div class="bg-title">
-                Nic's Blog
+                    Gaykerwan's Blog
             </div>
             <div class="md-title">
                 DEBUG THE WORLD

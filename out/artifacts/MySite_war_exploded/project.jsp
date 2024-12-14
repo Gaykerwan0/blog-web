@@ -5,13 +5,13 @@
 <html>
 	<head>
 		<meta charset="utf-8" />
-		<title>NIC|PROJECT</title>
+		<title>Quande|PROJECT</title>
 		<%
 			String context = request.getContextPath();
 		%>
 		<meta content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport">
-		<meta name="keywords" content="倪畅,烟台大学,计算机,学生,个人主页,HTML,CSS,PHP,JavaScript,jQuery,XML,AJAX,,SQL,bootstrap,Python" />
-		<meta name="description" content="倪畅的个人主页" />
+		<meta name="keywords" content="lqd" />
+		<meta name="description" content="lqdhome" />
 		<link rel="shortcut icon" href="<%=context %>/img/favicon.ico"/>
 		<link rel="stylesheet" type="text/css" href="<%=context %>/css/blog.css" />
 		<link rel="stylesheet" type="text/css" href="<%=context %>/css/project.css" />
@@ -106,10 +106,10 @@
 			</div>
 			<footer>
 				<div id="block">
-					<span id="beian">鲁ICP备18011092号 · </span>
+					<span id="beian">鲁ICP备2号 · </span>
 					<span id="demo"></span>
 				</div>
-				Copyright © 2018 nichang.site <span>托管于阿里云</span>
+				Copyright © 2024 Quande.site <span>托管于腾讯</span>
 			</footer>
 		</div>
 	</body>

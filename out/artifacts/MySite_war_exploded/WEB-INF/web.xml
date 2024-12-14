@@ -5,7 +5,7 @@
          version="4.0">
     <servlet>
         <servlet-name>PostlistServlet</servlet-name>
-        <servlet-class>com.nic.servlet.PostlistServlet</servlet-class>
+        <servlet-class>com.Quande.servlet.PostlistServlet</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>PostlistServlet</servlet-name>
@@ -13,7 +13,7 @@
     </servlet-mapping>
     <servlet>
         <servlet-name>LoginServlet</servlet-name>
-        <servlet-class>com.nic.servlet.LoginServlet</servlet-class>
+        <servlet-class>com.Quande.servlet.LoginServlet</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>LoginServlet</servlet-name>
@@ -21,7 +21,7 @@
     </servlet-mapping>
     <servlet>
         <servlet-name>PosteditServlet</servlet-name>
-        <servlet-class>com.nic.servlet.PosteditServlet</servlet-class>
+        <servlet-class>com.Quande.servlet.PosteditServlet</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>PosteditServlet</servlet-name>
@@ -29,7 +29,7 @@
     </servlet-mapping>
     <servlet>
         <servlet-name>CategoryServlet</servlet-name>
-        <servlet-class>com.nic.servlet.CategoryServlet</servlet-class>
+        <servlet-class>com.Quande.servlet.CategoryServlet</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>CategoryServlet</servlet-name>
@@ -37,7 +37,7 @@
     </servlet-mapping>
     <servlet>
         <servlet-name>CategoryEditServlet</servlet-name>
-        <servlet-class>com.nic.servlet.CategoryEditServlet</servlet-class>
+        <servlet-class>com.Quande.servlet.CategoryEditServlet</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>CategoryEditServlet</servlet-name>
@@ -45,7 +45,7 @@
     </servlet-mapping>
     <servlet>
         <servlet-name>ImgServlet</servlet-name>
-        <servlet-class>com.nic.servlet.ImgServlet</servlet-class>
+        <servlet-class>com.Quande.servlet.ImgServlet</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>ImgServlet</servlet-name>
@@ -53,7 +53,7 @@
     </servlet-mapping>
     <filter>
         <filter-name>AdminFilter</filter-name>
-        <filter-class>com.nic.filter.AdminFilter</filter-class>
+        <filter-class>com.Quande.filter.AdminFilter</filter-class>
         <init-param>  <!--为过滤器指定初始化参数  -->
             <param-name>noFilterPaths</param-name>
             <param-value>index.html;login.html;success.jsp;error.jsp;blog.jsp;article.jsp;project.jsp;
